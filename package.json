@@ -48,6 +48,7 @@
     "vite-tsconfig-paths": "^5.0.1"
   },
   "dependencies": {
+    "@cannonui/md-edit": "^1.0.0",
     "axios": "^1.7.7",
     "dompurify": "^3.1.6",
     "highlightjs": "^9.16.2",
