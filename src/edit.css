@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown-input,
+.markdown-preview {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.markdown-toolbar {
+  position: relative;
+}
+
+.emoji-picker-container {
+  position: relative;
+  display: inline-block;
+}
+
+.emoji-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the toolbar button */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 200px;
+}
+
+.emoji-dropdown button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.emoji-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+.emoji-dropdown.visible {
+  display: block;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
+}
